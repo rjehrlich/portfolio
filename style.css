@@ -37,3 +37,58 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     max-width: 40%;
 }
+
+/* Form Styles */
+form {
+    display: block;
+    margin: 0 0 2em 0;
+}
+
+form > .fields {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + 3em);
+    margin: -1.5em 0 2em -1.5em;
+}
+
+form > .fields > .field {
+    flex-grow: 0;
+    flex-shrink: 0;
+    padding: 1.5em 0 0 1.5em;
+    width: calc(100% - 1.5em);
+}
+
+label {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+}
+
+input {
+    height: 2.5em;
+}
+
+input, textarea {
+    appearance: none;
+    background: rgba(255, 255, 255, 0.025);
+    border-radius: 5px;
+    border: none;
+    border: solid 2px rgba(255, 255, 255, 0.125);
+    color: inherit;
+    display: block;
+    outline: 0;
+    padding: 0 1em;
+    text-decoration: none;
+    width: 100%;
+}
+
+ul.actions {
+    display: flex;
+    cursor: default;
+    list-style: none;
+    margin-left: .1em;
+    padding-left: 0;
+}
