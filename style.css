@@ -11,11 +11,27 @@ body {
     line-height: 1.15;
 }
 
+header {
+    transition: background-color 0.2s ease-in-out;
+    background-color: rgba(53, 56, 73, 0.95);
+    height: 3.5em;
+    left: 0;
+    line-height: 3.5em;
+    padding: 0 1.25em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
     letter-spacing: 2px;
     margin: 0 0 16px 0;
     text-transform: uppercase;
+    padding-bottom: 1em;
+    border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 }
 
 #hero {
@@ -28,14 +44,47 @@ h1, h2, h3, h4, h5, h6 {
     height: 150px;
 }
 
-.image {
-    overflow-clip-margin: content-box;
-    overflow: clip;
+p {
+    margin: 0 0 2em 0;
+}
+
+/* Projects Section */
+.project-list {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.project-list article {
+    padding: 1.75em 1.75em 0.1em 1.75em;
+    background-color: #353849;
     border-radius: 5px;
-    border: 0;
-    display: inline-block;
+    margin: 1.5em 3em 1.5em 0;
+    /* width: calc(50% - 1.5em); */
+}
+
+.project-list article .image {
+    border-radius: 5px 5px 0 0;
+    display: block;
+    margin-bottom: 1.75em;
+    margin-left: -1.75em;
+    margin-top: -1.75em;
     position: relative;
-    max-width: 40%;
+    width: calc(100% + 3.5em);
+}
+
+.project-list article .image img{
+    border-radius: 5px 5px 0 0;
+    width: 100%;
+}
+
+/* Footer */
+footer {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Form Styles */
