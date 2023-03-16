@@ -1,0 +1,18 @@
+body {
+    background-color: #2e3141;
+    /* Photo by <a href="https://unsplash.com/ko/@designfuchs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">max fuchs</a> on <a href="https://unsplash.com/photos/Nm6ojlDO-5c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(images/background-max-fuchs-unsplash.jpg);
+    background-size: auto, cover;
+    background-attachment: fixed, fixed;
+    background-position: center, center;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Montserrat', 'Helvetiica', sans-serif;
+}
+
+#hero .headshot img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+}
+
