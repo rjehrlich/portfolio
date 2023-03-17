@@ -24,13 +24,17 @@ header {
     z-index: 10000;
 }
 
+h1 {
+    visibility: hidden;
+}
 
-h1, h2, h3, h4, h5, h6 {
+
+h2, h3, h4, h5, h6 {
     color: #ffffff;
     letter-spacing: 2px;
     margin: 0 0 16px 0;
     text-transform: uppercase;
-    padding-bottom: 1em;
+    padding-bottom: 20px;
     border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 }
 
