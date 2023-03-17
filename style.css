@@ -23,18 +23,18 @@ header {
 }
 
 header #menu {
-    position: absolute;
+    display: inline-block;
     right: 1em;
     top: 0;
 }
 
 #menu .menu-links {
     padding-left: 1em;
+    display: inline-block;
 }
 
 #menu .menu-links li {
     list-style-type: none;
-    float: right;
     padding-bottom: 10px;
     margin-left: 1em;
     padding-left: 0.5em;
@@ -63,23 +63,27 @@ h2, h3, h4, h5, h6 {
 
 #hero {
     padding: 10em 0 4.75em 0;
-    /* Photo by max fuchs</a> on <a href="https://unsplash.com/photos/Nm6ojlDO-5c?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>*/
-    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(images/background-max-fuchs-unsplash.jpg);
+    /* Photo by S O C I A L . C U T on Unsplash */
+    background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(images/unsplash_socialcut.jpg);
     background-size: auto, cover;
-    background-attachment: fixed, fixed;
-    background-position: center, center;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .hero-text {
     margin: 0 auto;
-    width: 50em;
+    width: 80em;
+    text-align: right;
 } 
+
+#hero .headshot {
+    padding-bottom: 2em;
+}
 
 #hero .headshot img {
     border-radius: 50%;
     width: 150px;
     height: 150px;
-    padding-bottom: 2em;
 }
 
 p {
@@ -87,6 +91,12 @@ p {
 }
 
 /* Projects Section */
+#projects {
+    padding-top: 50px;
+    margin: 0 auto;
+    width: 80em;
+}
+
 .project-list {
     display: grid;
     grid-template-columns: 2fr 2fr;
@@ -114,6 +124,14 @@ p {
 .project-list article .image img{
     border-radius: 5px 5px 0 0;
     width: 100%;
+}
+
+a.learn {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    margin: 0 0 2em 0;
 }
 
 /* Footer */
